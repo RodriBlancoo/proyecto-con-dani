@@ -13,7 +13,7 @@ header img{
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
 }
 nav a{
     text-decoration: none;
@@ -21,7 +21,18 @@ nav a{
     font-size: 17px;
     padding: 15px;
 }
-
+@media(width <=480px){
+    nav{
+        flex-direction: column;
+    }
+}
+@media(width >=481px){
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 form{
     text-align: center;
     
@@ -104,9 +115,8 @@ form{
 }
 .tarjetas{
     display: flex;
-   margin-right: 10px;
-   margin-left: 10px;
-   justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .card h2{
     color: rgb(0, 0, 0);

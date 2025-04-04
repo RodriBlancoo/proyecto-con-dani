@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
+    padding: auto;
 }
 header{
     background-color: #6F1A07;
@@ -13,13 +14,25 @@ header img{
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
 }
 nav a{
     text-decoration: none;
     color: white;
     font-size: 17px;
     padding: 15px;
+}
+@media(width <=480px){
+    nav{
+        flex-direction: column;
+    }
+}
+@media(width >=481px){
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 form{
     text-align: center;
